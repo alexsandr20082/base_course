@@ -12,4 +12,4 @@ pop1,pop2 = 0,1
 trigonometry_array[:, [pop1,pop2]] = trigonometry_array[:, [pop1,pop2]]
 print("Массив после замены столбцов: ")
 print(trigonometry_array)
-
+ 
