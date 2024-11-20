@@ -8,7 +8,7 @@ def hyperbola_plotter(x1,x2,N):
     plt.ylabel('coord - y')
     plt.title('hyperbola plotter')
     plt.legend()
-    plt.savefig('fig_7.png')
+    plt.savefig('fig_6.png')
  
  
 if __name__ == '__main__':
