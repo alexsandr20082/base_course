@@ -9,7 +9,7 @@ def circle_photter(R=10):
     fxy = X**2 + Y**2 - R**2  
     plt.contour(X, Y, fxy, levels=[0])
  
-    plt.savefig('fig_6.png')
+    plt.savefig('fig_7.png')
  
 if __name__ == '__main__':
     circle_photter()
