@@ -3,7 +3,7 @@ import numpy as np
 def hyperbola_plotter(x1,x2,N):
     x = np.linspace(x1,x2,N)
     y1 = 1/x
-    plt.plot(x,y1,label='y = 1/x',color='black')
+    plt.plot(x,y1,color='black')
     plt.xlabel('coord - x')
     plt.ylabel('coord - y')
     plt.title('hyperbola plotter')
