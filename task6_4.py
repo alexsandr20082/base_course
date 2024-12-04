@@ -1,24 +1,41 @@
-import matplotlib.pyplot as plt
 import numpy as np
-b = 0.2
-k = 1
-phi = np.linspace(0,8 * np.pi, 1000)
+import matplotlib.pyplot as plt
+phi_spiral = np.linspace(0, 8 * np.pi, 1000)
 
-r_log = np.exp(b * phi)
-x_log = r_log * np.cos(phi)
-y_log = r_log * np.sin(phi)
+k_arch = 1 
+r_arch = k_arch * phi_spiral
+x_arch = r_arch * np.cos(phi_spiral)
+y_arch = r_arch * np.sin(phi_spiral)
 
-r_arhimed = k * phi
-x_arhimed = r_arhimed * np.cos(phi)
-y_arhimed = r_arhimed * np.sin(phi)
+phi_sceptre = np.linspace(0.01, 8 * np.pi, 1000)  
+k_sceptre = 1  
+r_sceptre = k_sceptre / np.sqrt(phi_sceptre)
+x_sceptre = r_sceptre * np.cos(phi_sceptre)
+y_sceptre = r_sceptre * np.sin(phi_sceptre)
 
-phi_jei = np.linspace(0.01, 8 * np.pi, 1000)
-r_jei = k / np.sqrt(phi_jei)
-x_jei = r_jei * np.cos(phi)
-y_arhimed = r_jei * np.sin(phi_jei)
+k_rose = 4  
+r_rose = np.sin(k_rose * phi_spiral)
+x_rose = r_rose * np.cos(phi_spiral)
+y_rose = r_rose * np.sin(phi_spiral)
 
-k_rose = 20
-r_rose = np.sin
+plt.subplot(2, 2, 1)
+plt.plot(x_arch, y_arch)
+plt.axis('equal')
+plt.grid()
 plt.legend()
-plt.savefig('fig_8.png')
 
+plt.subplot(2, 2, 2)
+plt.plot(x_sceptre, y_sceptre)
+plt.axis('equal')
+plt.legend()
+plt.grid()
+
+ 
+
+plt.subplot(2, 2, 3)
+plt.plot(x_rose, y_rose)
+plt.axis('equal')
+plt.legend()
+plt.grid()
+plt.savefig('fig_8.png')
+ 
