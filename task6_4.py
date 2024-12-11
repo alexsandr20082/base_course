@@ -18,24 +18,21 @@ r_rose = np.sin(k_rose * phi_spiral)
 x_rose = r_rose * np.cos(phi_spiral)
 y_rose = r_rose * np.sin(phi_spiral)
 
-plt.subplot(2, 2, 1)
 plt.plot(x_arch, y_arch)
 plt.axis('equal')
 plt.grid()
 plt.legend()
-
-plt.subplot(2, 2, 2)
+plt.savefig('fig_8.png')
+ 
 plt.plot(x_sceptre, y_sceptre)
 plt.axis('equal')
 plt.legend()
 plt.grid()
-
+plt.savefig('fig_9.png')
  
-
-plt.subplot(2, 2, 3)
 plt.plot(x_rose, y_rose)
 plt.axis('equal')
 plt.legend()
 plt.grid()
-plt.savefig('fig_8.png')
+plt.savefig('fig_10.png')
  

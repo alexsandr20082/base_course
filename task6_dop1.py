@@ -20,4 +20,4 @@ for d in d_values:
     plt.plot(x,y,label=d)
     
 plt.legend()
-plt.savefig('fig_9.png')
+plt.savefig('fig_11.png')

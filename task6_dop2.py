@@ -28,7 +28,7 @@ def plot_ellipse(epsilon, p):
     plt.axvline(0, color='black', lw=0.5, ls='--')
     plt.legend()
     plt.show()
-    plt.savefig('fig_10.png')
+    plt.savefig('fig_12.png')
 
 # Пример использования функции
 plot_ellipse(epsilon=0.5, p=2)
