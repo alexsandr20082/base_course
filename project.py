@@ -22,5 +22,5 @@ plt.axis('equal')
 ax.set_xlim(-edge, edge)
 ax.set_ylim(-edge, edge)
  
-ani = FuncAnimation(fig, animate, frames=100, interval=30)
+ani = FuncAnimation(fig, animate, frames=200, interval=30)
 ani.save('animation_3.gif', writer="pillow")
