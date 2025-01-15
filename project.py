@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
  
 def circle_move(R, vx0,vy0,time) :
-    x0 = vx0 * time
+    x0 = vx0 
     y0 = vy0 * time
     alpha = np.arange(0,2*np.pi,0.1)
     x = x0 + R*np.cos(alpha)
@@ -20,7 +20,7 @@ def animate(i):
 edge = 2
 plt.axis('equal')
 ax.set_xlim(-edge, edge)
-ax.set_ylim(-edge, edge)
+ax.set_ylim(edge, -edge)
  
 ani = FuncAnimation(fig, animate, frames=200, interval=30)
 ani.save('animation_3.gif', writer="pillow")
