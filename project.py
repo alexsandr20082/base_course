@@ -17,7 +17,7 @@ def animate(i):
     ball.set_data(circle_move(R=0.01, vx0=0.01, vy0=0.01, time=i))
     return ball
     
-edge = 3
+edge = 2
 plt.axis('equal')
 ax.set_xlim(-edge, edge)
 ax.set_ylim(-edge, edge)
