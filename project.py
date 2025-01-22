@@ -61,8 +61,6 @@ def update(frame):
 ani = animation.FuncAnimation(fig, update, frames=300, interval=20)
 
 plt.title("Анимация мяча, падающего на лестницу")
-plt.xlabel("Ширина")
-plt.ylabel("Высота")
 plt.grid()
 plt.gca().set_aspect('equal', adjustable='box') 
 plt.show()
