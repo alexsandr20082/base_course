@@ -5,9 +5,8 @@ import matplotlib.animation as animation
 num_steps = 10
 step_height = 1
 step_width = 2
-move_right_speed = 0.025
-bounce_factor = 1
-
+move_right_speed = 0.027
+bounce_factor = 0.7
 
 #Ступеньки
 x_steps = np.arange(num_steps) * step_width
@@ -60,7 +59,7 @@ def update(frame):
 
 ani = animation.FuncAnimation(fig, update, frames=300, interval=20)
 
-plt.title("Анимация мяча, падающего на лестницу")
+plt.title("Анимация мяча, прыгающего по лестницу")
 plt.grid()
 plt.gca().set_aspect('equal', adjustable='box') 
 plt.show()
