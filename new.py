@@ -106,4 +106,4 @@ if __name__ == '__main__':
     ax.set_ylim(-1, 1)
 
     ani = FuncAnimation(fig, animate, frames=N, interval=30)
-    ani.save('collision.gif')
+    ani.save('collision3.gif')

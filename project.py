@@ -16,8 +16,8 @@ y_steps = np.arange(num_steps) * step_height
 ball_radius = 0.2
 ball_x = step_width / 2 
 ball_y = num_steps * step_height + ball_radius 
-velocity_y = 0  
-gravity = -0.01  
+velocity_y = 0 
+gravity = -0.01   
 
 fig, ax = plt.subplots()
 ax.set_xlim(-1, num_steps * step_width + 1)
